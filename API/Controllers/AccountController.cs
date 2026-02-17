@@ -37,6 +37,7 @@ namespace API.Controllers
             return ValidationProblem();
         }
 
+        [AllowAnonymous]
         [HttpGet("user-info")]
         public async Task<ActionResult> GetuserInfo()
         {
