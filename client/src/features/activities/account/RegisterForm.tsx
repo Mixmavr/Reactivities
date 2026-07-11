@@ -54,7 +54,7 @@ export default function RegisterForm() {
         </Box>
         <TextInput label='Email' control={control} name='email'/>
         <TextInput label='Display name' control={control} name='displayName'/>
-        <TextInput label='Paswword' type='password' control={control} name='password'/>
+        <TextInput label='Password' type='password' control={control} name='password'/>
         <Button
             type='submit'
             disabled={!isValid  || isSubmitting}
