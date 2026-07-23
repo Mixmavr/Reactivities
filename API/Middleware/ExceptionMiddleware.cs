@@ -24,11 +24,11 @@ namespace API.Middleware
             catch (Exception ex)
             {
                 
-                await HandleValidationException(context, ex);
+                await HandleException(context, ex);
             }
         }
 
-        private async Task HandleValidationException(HttpContext context, Exception ex)
+        private async Task HandleException(HttpContext context, Exception ex)
         {
             logger.LogError(ex, ex.Message);
             context.Response.ContentType = "application/json";
