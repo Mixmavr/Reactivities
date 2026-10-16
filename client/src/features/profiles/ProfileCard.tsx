@@ -12,7 +12,7 @@ export default function ProfileCard({ profile }: Props) {
     <Link to={`/profiles/${profile.id}`} style={{textDecoration: 'none'}}>
         <Card 
             sx={{borderRadius: 3, p:3, 
-            maxWidth: 300, 
+            maxWidth: 250, 
             textDecoration: 'none'
             }} 
             elevation={4}
